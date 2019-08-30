@@ -1,0 +1,460 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 00 - PRODUCT DETAIL */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.productDetailContent {
+    position: relative;
+    margin-left: 30px;
+}
+
+.productOderDetail {
+    padding-bottom: 25px;
+    border-bottom: 1px solid $greyColor;
+    .as {
+        margin-bottom: 15px;
+    }
+    > p {
+        margin-bottom: 20px;
+    }
+    .productSize {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 55px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        .imgWrapper {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+        img {
+            width: 16px;
+            height: 16px;
+        }
+        p {
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            padding-right: 3px;
+        }
+        span,
+        i {
+            font-size: 17px;
+            font-weight: 700;
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+        i {
+            display: inline-block;
+        }
+    }
+}
+
+.ingredientsPrice {
+    font-family: $comfortaa;
+    font-weight: 700;
+    p {
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 6px;
+    }
+    span,
+    i {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+        margin-right: 3px;
+    }
+}
+ 
+.ingredientsWrapper {
+    font-family: $comfortaa;
+    color: #000;
+    font-size: 0;
+    text-align: center;
+    .ingredienSection {
+        position: relative;
+        width: 16.6666%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .ingredientItem {
+        position: relative;
+        max-width: 180px;
+        margin: 0 auto 40px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 20px 10px 10px;
+        cursor: pointer;
+        &:before {
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            right: -15px;
+            bottom: -15px;
+            opacity: 0;
+            transform: scale(.96);
+            box-shadow: 0 0 11px 6px rgba(0,0,0,.06);
+            transition: opacity .400s cubic-bezier(0.445, 0.050, 0.550, 0.950), transform .400s cubic-bezier(0.445, 0.050, 0.550, 0.950);
+            content: '';
+        }
+        &.active {
+            .removeIng,
+            &:before {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .imgWrapper {
+            max-width: 110px;
+            margin: 0 auto 14px;
+            overflow: hidden;
+        }
+        p {
+            margin-bottom: 8px;
+            min-height: 36px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+        span {
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 800;
+            padding: 3px 16px;
+        }
+        i {
+            display: inline-block;
+            font-family: $roboto;
+            font-size: 13px;
+            color: #4c4c4c;
+            padding: 0 16px;
+            font-weight: 300;
+        }
+    }
+    .removeIng {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background: $redColor;
+        border: 1px solid $redColor;
+        opacity: 0;
+        transform: scale(.76);
+        transition: opacity .400s cubic-bezier(0.445, 0.050, 0.550, 0.950) , transform .400s cubic-bezier(0.445, 0.050, 0.550, 0.950);
+        cursor: pointer;
+        &:before,
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 14px;
+            height: 1px;
+            background: #fff;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            transition: background .400s cubic-bezier(0.445, 0.050, 0.550, 0.950);
+            backface-visibility: hidden;
+            content: '';
+        }
+        &:after {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+}
+
+.castomIngredients {
+    padding-bottom: 25px;
+    border-bottom: 1px solid $greyColor;
+    font-size: 0;
+    .newIngredient {
+        position: relative;
+        margin-top: 25px;
+        font-size: 15px;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        p {
+            padding-left: 15px;
+            transition: color .250s linear;
+        }
+        span {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 14px;
+            height: 14px;
+            transform: translateY(-50%);
+            display: block;
+            &:before,
+            &:after {
+                position: absolute;
+                top: 5px;
+                left: 0;
+                width: 10px;
+                height: 2px;
+                background: $redColor;
+                transform: rotate(-45deg);
+                transition: background .250s linear;
+                content: '';
+            }
+            &:after {
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.orderDetailSection {
+    width: 38%;
+    display: inline-block;
+    vertical-align: middle;
+    .productPrice {
+        font-family: $comfortaa;
+        p {
+           font-size: 16px;
+           font-weight: 600; 
+           color: #010101;
+           display: inline-block;
+           vertical-align: middle;
+           padding-right: 8px;
+        }
+        span,
+        i {
+            font-size: 24px;
+            line-height: 26px;
+            color: $redColor;
+            font-weight: 700;
+            display: inline-block;
+            vertical-align: middle;
+            padding-right: 4px;
+        }
+    }
+    .counterTitle {
+        font-size: 16px;
+        color: #010101;
+        font-weight: 600;
+        display: inline-block;
+        vertical-align: middle;
+         font-family: $comfortaa;
+         padding-right: 8px;
+    }
+}
+
+.orderPrizeSection {
+    font-size: 0;
+}
+
+
+// Product detail
+.productDetail {
+    position: relative;
+    min-height: 520px;
+    min-width: 520px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.swiper-slide .productThumbnail .productOrder {
+    margin-bottom: 0;
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 1024px) {
+    .ingredientsWrapper {
+        .ingredientItem:hover {
+            .removeIng {
+                opacity: 1;
+                transform: scale(1);
+                &:hover {
+                    transform: scale(1.07);
+                }
+            }
+            &:before {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+    .newIngredient:hover {
+        color: $redColor;
+        span {
+            &:before,
+            &:after {
+                background: $blackColor;
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1366px) {
+    .productDetailFlex .swiperMainWrapper {
+        max-width: 453px;
+    }
+    .productDetail {
+        min-height: 453px;
+        min-width: 453px;
+    }
+    .ingredientsWrapper .ingredienSection {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1355px) and (min-width: 992px) {
+    .orderDetailSection {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .productDetailContent {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .orderDetailSection {
+        width: 50%;
+    }
+    .productDetailFlex {
+        padding: 0 15px;
+        .swiperMainWrapper,
+        .productDetailContent {
+            max-width: 100%;
+        }
+        .swiper-slide {
+            overflow: hidden;
+        }
+    }
+    .ingredientsWrapper .ingredienSection {
+        width: 33%;
+    }
+}
+
+@media (min-width: 992px) {
+    .productDetailFlex {
+        display: flex;
+        align-items: center;
+
+        * >[class*="col-"] {
+            float: none;
+        }
+        .swiperMainWrapper {
+            max-width: 550px;
+            padding: 0 15px;
+            .swiper-slide {
+                overflow: hidden;
+            }
+        }
+        .productDetailContent {
+            width: 66.6666%;
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .productDetail {
+        min-height: 290px;
+        min-width: 290px;
+
+    }
+    .discountProduct .as a {
+        min-height: 1px;
+    }
+    .ingredientsWrapper {
+        .ingredienSection {
+            width: 50%;
+            margin: 0 auto;
+            .removeIng {
+                top: 5px;
+                right: 5px;
+                width: 24px;
+                height: 24px;
+            }
+            .ingredientItem  {
+                max-width: 150px;
+                margin: 0 auto 15px;
+                padding: 30px 10px 10px;
+                font-size: 13px;
+                line-height: 20px;
+                &:before {
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+                p {
+                    padding-top: 4px;
+                    min-height: 36px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            i {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+    .newIngredientWrapper {
+        font-size: 0;
+        .newIngredient {
+            width: 50%;
+            margin-right: 0;
+            margin-top: 0;
+            margin-bottom: 25px;
+            padding-right: 15px;
+        }
+    }
+    .castomIngredients {
+        padding-bottom: 0;
+    }
+    .orderDetailSection {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .productOderDetail .productSize {
+        margin-right: 0;
+        margin-bottom: 15px;
+        display: block;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .productDetailFlex {
+        padding: 0;
+    }
+}
+
+@media (max-width: 374px) {
+    .ingredientsWrapper .ingredienSection .ingredientItem {
+        max-width: 130px;
+    }
+}

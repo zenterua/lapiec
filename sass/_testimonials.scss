@@ -1,0 +1,106 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 00 - TESTIMONIALS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.testimonials {
+	margin-bottom: 40px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.autorInfo {
+		position: relative;
+		display: inline-block;
+		.testimonialsDate {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			font-size: 15px;
+			color: rgba(0,0,0,.6);
+			font-weight: 300;
+			transform: translateY(-50%);
+		}
+	}
+	.as {
+		margin-bottom: 5px;
+		padding-right: 100px;
+	}
+	.testimonialsRating {
+		margin-bottom: 10px;
+	}
+	
+}
+
+.testimonialsForm {
+	text-align: right;
+}
+
+.commentRank {
+	text-align: left;
+	font-size: 14px;
+	p {
+		margin-bottom: 5px;
+	}
+}
+
+.commentStars {
+	.selectS {
+		position: relative;
+		width: 22px;
+		height: 22px;
+		display: inline-block;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		transition: background .250s linear;
+		&.icon-star {
+			background-image: url(../fonts/svg-icons/star.svg);
+		}
+		&.icon-star-empty {
+			background-image: url(../fonts/svg-icons/star-empty.svg);
+		}
+	}
+	&.starsSelected {
+		pointer-events: none;
+		cursor: auto;
+		.selectS {
+			width: 18px;
+			height: 18px;
+		}
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 1024px) {
+
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+	.testimonials {
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 767px) {
+    .testimonialsForm {
+    	text-align: center;
+    }
+    .testimonials {
+		margin-bottom: 20px;
+	}
+}

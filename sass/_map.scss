@@ -1,0 +1,81 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 10 - MAP */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.map-wrapper {
+    height: 430px;
+    &.fullSize {
+    	height: calc(100% - 70px);
+    }
+}
+
+.pac-container {
+	font-size: 12px;
+	margin-top: -1px;
+	margin-left: 1px;
+	border-radius: 0;
+	border: 1px solid $blackColor;
+	font-family: $comfortaa;
+	font-weight: 700;
+	.pac-item {
+		cursor: pointer;
+		padding: 8px 10px;
+		transition: color 250ms linear;
+	}
+	.pac-item-query {
+		transition: color 250ms linear;
+	}
+	.pac-icon {
+		width: 30px;
+		height: 30px;
+		background-image: url(../fonts/svg-icons/map-marker.svg);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		margin-top: 0;
+	}
+}
+
+.mapFiltersWrapper {
+	display: flex;
+	margin: 15px -15px 0;
+	.button {
+		width: 33.3333%;
+		margin: 0 15px;
+	}
+}
+
+
+.statusMap {
+	.cellView {
+		height: 100vh;
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}

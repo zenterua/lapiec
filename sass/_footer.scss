@@ -1,0 +1,227 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 11 - FOOTER */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+	position: relative;
+	color: #fff;
+	padding: 50px 0 20px;
+	font-family: $comfortaa;
+	.container {
+		z-index: 1;
+	}
+	.bgPattern {
+		background-size: auto auto;
+		background-repeat: repeat;
+	}
+}
+
+.footerLogo {
+	display: inline-block;
+	margin-bottom: 22px;
+	transition: opacity .250s linear;
+	img {
+		width: 194px;
+		height: 70px;
+		display: block;
+	}
+}
+
+.footerNav {
+	text-align: center;
+	ul {
+		display: inline-block;
+		vertical-align: top;
+		font-weight: 300;
+		font-size: 15px;
+		text-align: left;
+		margin: 0 40px;
+		li {
+			margin-bottom: 11px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				transition: color .250s linear;
+			}
+		}
+	}
+}
+
+.footerInfo {
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 40px;
+	line-height: 26px;
+	max-width: 250px;
+	font-size: 16px;
+	.infoIcon {
+		position: relative;
+		width: 60px;
+		height: 60px;
+		display: inline-block;
+		border: 1px solid rgba(255,255,255, .5);
+		border-radius: 100%;
+		margin-bottom: 12px;
+	}
+	a {
+		display: table;
+		font-weight: 700;
+		margin: 0 auto;
+		transition: color .250s linear;
+	}
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 24px;
+		height: auto;
+		display: block;
+		transform: translate(-50%,-50%);
+	}
+}
+
+.footerBottom {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	font-size: 12px;
+	color: rgba(255,255,255, .7);
+	border-top: 1px solid rgba(255,255,255, .3);
+	padding-top: 22px;
+	font-family: $roboto;
+	.copy {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	a {
+		p {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 3px;
+			&:before {
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				width: 0;
+				height: 2px;
+				background: $redColor;
+				transition: width .250s linear;
+				content: '';
+			}
+		}
+		span {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		img {
+			width: 75px;
+			height: 40px;
+			display: block;
+		}
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 1024px) {
+	.footerLogo:hover {
+		opacity: .8;
+	}
+	.footerNav a:hover,
+	.footerInfo a:hover {
+		color: $redColor;
+	}
+	.footerBottom a:hover p:before {
+		width: 100%;
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1500px) {
+	.footerNav ul {
+		margin: 0 24px;
+	}
+}
+
+@media (max-width: 1366px) {
+	.footerNav ul {
+		margin: 0 15px;
+	}
+}
+
+@media (max-width: 1199px) {
+	footer {
+		font-size: 0;
+	}
+	.footerInfo {
+		margin: 0;
+		width: 50%;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 991px) {
+    footer {
+    	text-align: center;
+    	padding-top: 45px;
+    }
+    .footerLogo {
+    	margin-bottom: 10px;
+    }
+    .footerNav {
+    	ul {
+    		display: block;
+    		margin: 0;
+    		font-size: 0;
+    		li {
+    			display: inline-block;
+    			width: 50%;
+    			font-size: 18px;
+    			line-height: 22px;
+    			text-align: center;
+    		}
+    	}
+    }
+    .footerInfo {
+    	width: 100%;
+    	margin-bottom: 15px;
+    	p {
+			font-size: 14px;
+    	}
+		&:last-child {
+			margin-bottom: 0;
+		}
+    	.infoIcon {
+    		display: none;
+    	}
+    }
+    .footerBottom {
+    	padding-top: 30px;
+    	display: block;
+    	.copy {
+    		display: block;
+    		margin-bottom: 10px;
+    	}
+    }
+}
+
+@media (max-width: 767px) {
+	footer {
+		padding-top: 25px;
+		.footerBottom {
+			padding-top: 20px;
+		}
+	}
+    
+}

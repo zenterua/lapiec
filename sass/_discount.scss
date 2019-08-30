@@ -1,0 +1,96 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* 00 - DISCOUNT */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.discountProduct {
+	position: relative;
+	text-align: center;
+	.imgWrapper {
+		position: relative;
+	    display: block;
+	    margin-bottom: 25px;
+	    transition: opacity .250s linear;
+	    img {
+	    	margin-left: auto;
+	    	margin-right: auto;
+	    }
+	}
+	.as {
+		position: relative;
+		cursor: pointer;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+		transition: color .250s linear;
+		a {
+			display: -webkit-box;
+		    -webkit-line-clamp: 2;
+		    -webkit-box-orient: vertical;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    min-height: 60px;
+		}
+		&:before,
+		&:after {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 50%;
+			height: 1px;
+			background: $greyColor;
+			transition: opacity .700s cubic-bezier(.445,.05,.55,.95) .150s, width .700s cubic-bezier(.445,.05,.55,.95) .150s;
+			content: '';
+		}
+		&:after {
+			left: auto;
+			right: 50%;
+		}
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* HOVER
+/*----------------------------------------------------------------*/
+
+@media (min-width: 1024px) {
+	.discountProduct {
+		.imgWrapper:hover {
+			opacity: .75;
+		}
+		.as:hover {
+			color: $redColor;
+		}
+	}
+}
+
+/*----------------------------------------------------------------*/
+/* Media Queries
+/*----------------------------------------------------------------*/
+
+@media (max-width: 1500px) {
+	.discountProduct .as {
+		min-height: 80px;
+	}
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    
+}
+
+@media (max-width: 767px) {
+    .discountProduct .as {
+    	min-height: 1px;
+    }
+}
+
+// IE FIX 
+@media screen and (min-width: 0\0) {
+    .discountProduct {
+        .as a {
+            display: block;
+        }
+    }
+}

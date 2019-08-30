@@ -1,0 +1,222 @@
+[
+  {
+    "delayed":true,
+    "status":"Готовится",
+    "delivery_time_to_end":1,
+    "number":"57092",
+    "location":{
+      "lat":49.790193,
+      "lng":24.0690494
+    },
+    "info":"Оксана<br> Львів, Кавалерідзе І. вул., дім 23<br> підїзд.2<br> кв.15"
+  },
+  {
+    "delayed":false,
+    "status":"Готово",
+    "delivery_time_to_end":36,
+    "number":"83377",
+    "location":{
+      "lat":49.830591,
+      "lng":24.0407359
+    },
+    "info":"Марта<br> Львів, Карпатська вул., дім 15<br> підїзд.1"
+  },
+  {
+    "delayed":false,
+    "status":"Готовится",
+    "delivery_time_to_end":20,
+    "number":"25438",
+    "location":{
+      "lat":49.8162092,
+      "lng":24.0020583
+    },
+    "info":"Роман<br> Львів, Княгині Ольги вул., дім 100 Л<br> підїзд.1<br> пов.9<br> кв.64"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":20,
+    "number":"7086",
+    "location":{
+      "lat":49.815202,
+      "lng":24.073985
+    },
+    "info":"Юрій Колісніченко<br> Львів, Вашингтона Джорджа. вул., дім 15<br> підїзд.2<br> пов.6<br> кв.59"
+  },
+  {
+    "delayed":false,
+    "status":"Готово",
+    "delivery_time_to_end":11,
+    "number":"7540",
+    "location":{
+      "lat":49.8068109,
+      "lng":24.0016018
+    },
+    "info":"Андрій<br> Львів, Наукова вул., дім 28<br> підїзд.1<br> пов.5<br> кв.118"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":-36,
+    "number":"37118",
+    "location":{
+      "lat":49.8060982,
+      "lng":24.0075501
+    },
+    "info":"Юрий<br> Львів, Рубчака І. вул., дім 21 А<br> підїзд.4<br> пов.8<br> кв.103"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":17,
+    "number":"92630",
+    "location":{
+      "lat":49.8389703,
+      "lng":24.0084821
+    },
+    "info":"Богдан<br> Львів, Городоцька вул., дім 72<br> кв.9"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":-5,
+    "number":"27918",
+    "location":{
+      "lat":49.8124262,
+      "lng":23.9941618
+    },
+    "info":"Оля<br> Львів, Володимира Великого вул., дім 44<br> підїзд.1<br> пов.3<br> кв.12"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":4,
+    "number":"83651",
+    "location":{
+      "lat":49.8151651,
+      "lng":24.0020505
+    },
+    "info":"Іван<br> Львів, Княгині Ольги вул., дім 37 А<br> пов.4<br> кв.11"
+  },
+  {
+    "delayed":false,
+    "status":"Готовится",
+    "delivery_time_to_end":27,
+    "number":"59571",
+    "location":{
+      "lat":49.8289284,
+      "lng":24.0061019
+    },
+    "info":"Назар<br> Львів, Чупринки Т.,ген. вул., дім 136<br> підїзд.2<br> пов.1<br> кв.17"
+  },
+  {
+    "delayed":false,
+    "status":"Готовится",
+    "delivery_time_to_end":23,
+    "number":"86421",
+    "location":{
+      "lat":49.8140506,
+      "lng":23.9889686
+    },
+    "info":"Ірина<br> Львів, Перфецького Л. вул., дім 11 А<br> кв.90"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":9,
+    "number":"7151",
+    "location":{
+      "lat":49.8097962,
+      "lng":24.002381
+    },
+    "info":"Христина<br> Львів, Володимира Великого вул., дім 51<br> підїзд.3<br> пов.7<br> кв.86"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":-39,
+    "number":"75324",
+    "location":{
+      "lat":49.8140506,
+      "lng":23.9889686
+    },
+    "info":"Олександр<br> Львів, Перфецького Л. вул., дім 2 А<br> підїзд.1<br> пов.7<br> кв.27"
+  },
+  {
+    "delayed":false,
+    "status":"Готовится",
+    "delivery_time_to_end":24,
+    "number":"34980",
+    "location":{
+      "lat":49.8113333,
+      "lng":23.9852388
+    },
+    "info":"Ярослав<br> Львів, Володимира Великого вул., дім 125"
+  },
+  {
+    "delayed":true,
+    "status":"В пути",
+    "delivery_time_to_end":6,
+    "number":"78313",
+    "location":{
+      "lat":49.7863685,
+      "lng":24.0673159
+    },
+    "info":"Антон<br> Львів, Трильовського К. вул., дім 5<br> підїзд.1<br> пов.5<br> кв.19"
+  },
+  {
+    "delayed":false,
+    "status":"Готово",
+    "delivery_time_to_end":34,
+    "number":"84624",
+    "location":{
+      "lat":49.831602,
+      "lng":24.0363301
+    },
+    "info":"Діана<br> Львів, Петрушевича Є. пл., дім 1"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":37,
+    "number":"10217",
+    "location":{
+      "lat":49.7915543,
+      "lng":24.0713749
+    },
+    "info":"Ярослава<br> Львів, Полуботка, дім 23<br> пов.3<br> кв.83"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":-50,
+    "number":"76816",
+    "location":{
+      "lat":49.8095037,
+      "lng":24.0791114
+    },
+    "info":"Тарас<br> Львів, Пасічна вул., дім 169 Г<br> підїзд.2<br> пов.7<br> кв.62"
+  },
+  {
+    "delayed":false,
+    "status":"В пути",
+    "delivery_time_to_end":-36,
+    "number":"47911",
+    "location":{
+      "lat":49.7994877,
+      "lng":23.9914364
+    },
+    "info":"Андрій<br> Львів, Пулюя І. вул., дім 40<br> пов.9<br> кв.68"
+  },
+    {
+    "delayed":false,
+    "status":"Ждет отправки",
+    "delivery_time_to_end":-36,
+    "number":"47911",
+    "location":{
+      "lat":49.7994877,
+      "lng":23.9914364
+    },
+    "info":"Андрій<br> Львів, Пулюя І. вул., дім 40<br> пов.9<br> кв.68"
+  }
+]

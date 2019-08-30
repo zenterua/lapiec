@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>La П’єц</title>
+
+    <link rel="stylesheet" href="css/main-style.min.css">
+    
+</head>
+<body>
+
+    <!--    Loader-START    -->
+    <div id="loader-wrapper">
+        
+    </div>
+    <!--    Loader-END  -->
+
+    <div id="content-block">
+        
+        <section class="section statusMap">
+            <div class="cellView">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="mapFiltersWrapper">
+                                <div class="button btnStyle2 mapFilter filtered" data-filter="All">Все</div>
+                                <div class="button btnStyle2 mapFilter" data-filter="delayed">Новые заранее</div>
+                                <div class="button btnStyle2 mapFilter" data-filter="ReadyAndInProgress">Готовится и Готово</div>
+                                <div class="button btnStyle2 mapFilter" data-filter="В пути">В пути</div>
+                                <div class="button btnStyle2 mapFilter" data-filter="Ждет отправки">Ждет отправки</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="emptySpace15"></div>
+
+                <div id="map" class="map-wrapper fullSize" data-lat="49.8256574" data-lng="23.9874005" data-zoom="12" data-map-marker="fonts/svg-icons/map-marker.svg"></div>
+            </div>
+            
+        </section>
+        
+    </div>
+    
+    <!--    Styles-START    -->
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <!--    Styles-END  -->
+
+    <!-- Fonts-START -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CComfortaa:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <!-- Fonts-END -->
+
+    <!--    Scripts-START   -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <script src="js/global.min.js"></script>
+    <!--    Scripts-END     -->
+
+    <!-- Map-START-->
+    <script language="javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9CXLB6tTD94qL3Jdxbesrx9Cj6fUUumE&libraries=geometry,places&sensor=true&amp;v=3&amp;language=uk"></script>
+    <script src="js/simple-map.js"></script>
+    <!-- Map-END-->
+
+</body>
+</html>
